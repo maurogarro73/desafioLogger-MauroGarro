@@ -15,6 +15,7 @@ testLogger.get('/', (req, res) => {
   req.logger.info('reportando algo - Informacion');
   req.logger.warn('algo no tan malo ocurrio');
   req.logger.error('TODO MAL :(');
+  req.logger.error('Nivel fatal');
 
   res.send({ message: 'Hola mundo' });
 });
